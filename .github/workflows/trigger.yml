@@ -1,0 +1,16 @@
+name: Trigger Python Script
+
+on:
+  workflow_dispatch:
+    inputs:
+      custom_event_name:
+        description: 'Custom event name'
+        required: true
+
+jobs:
+  trigger_script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: nifty
+      run: echo "nifty"
