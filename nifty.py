@@ -41,7 +41,7 @@ current_time_ist = datetime.now(ist).strftime('%Y-%m-%d %H:%M:%S')
 table_data[-1].append(current_time_ist)
 
 # Authenticate and access Google Sheets
-credentials = ServiceAccountCredentials.from_json_keyfile_name('/content/drive/MyDrive/Colab Notebooks/your-credentials.json', ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive'])
+credentials = ServiceAccountCredentials.from_json_keyfile_name('your-credentials.json', ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive'])
 client = gspread.authorize(credentials)
 sheet = client.open('NIFTY').sheet1  # Replace with your sheet title
 
