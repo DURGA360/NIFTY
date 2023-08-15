@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       custom_event_name:
-        description: 'Custom event name'
+        description: 'dj'
         required: true
 
 jobs:
